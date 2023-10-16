@@ -15,6 +15,20 @@ function workingGenius() {
     people: [
       new Person(
         "Alice",
+        "Houldsworth",
+        "https://cdn.churchsuite.com/Nr6TJr3e/user_files/bmb40rlp.jpg",
+        [
+          "Galvanising",
+          "Enablement",
+          "Discernment",
+          "Invention",
+          "Tenacity",
+          "Wonder",
+        ],
+        ["Everyone"]
+      ),
+      new Person(
+        "Alice",
         "Roberts",
         "https://media.licdn.com/dms/image/C5603AQFP24Vcn_Komg/profile-displayphoto-shrink_400_400/0/1585494550088?e=1703116800&v=beta&t=ZnsqkUnlcEinGY4s_36w-sUdfuBXAO_ic8I64CbbkdE",
         [
@@ -100,7 +114,7 @@ function workingGenius() {
       new Person(
         "Charlotte",
         "Swarbrook",
-        "https://img.freepik.com/premium-vector/stay-positive-emoji-hand-drawn-design-element-smiley-face-doodle-yellow-symbol-smiling-emoticon-scribble-happy-face-sticker_642540-791.jpg?w=1380",
+        "https://cdn.churchsuite.com/Nr6TJr3e/user_files/dilgj3de.jpg",
         [
           "Tenacity",
           "Enablement",
@@ -184,7 +198,7 @@ function workingGenius() {
       new Person(
         "Emily",
         "Cooper",
-        "https://img.freepik.com/premium-vector/stay-positive-emoji-hand-drawn-design-element-smiley-face-doodle-yellow-symbol-smiling-emoticon-scribble-happy-face-sticker_642540-791.jpg?w=1380",
+        "https://media.licdn.com/dms/image/D4E03AQEwgmY0xaZQRw/profile-displayphoto-shrink_400_400/0/1693942690907?e=1703116800&v=beta&t=eGcp_4OQkheMziEKlTDF8jgwS4pQ96V-8SbWSXwVPTA",
         [
           "Enablement",
           "Discernment",
@@ -193,7 +207,7 @@ function workingGenius() {
           "Tenacity",
           "Galvanising",
         ],
-        ["Everyone"]
+        ["Everyone", "Bunches"]
       ),
       new Person(
         "Erika",
@@ -226,7 +240,7 @@ function workingGenius() {
       new Person(
         "Heather",
         "Mayfield",
-        "https://img.freepik.com/premium-vector/stay-positive-emoji-hand-drawn-design-element-smiley-face-doodle-yellow-symbol-smiling-emoticon-scribble-happy-face-sticker_642540-791.jpg?w=1380",
+        "https://cdn.churchsuite.com/Nr6TJr3e/user_files/lpa3muvw.jpg",
         [
           "Enablement",
           "Wonder",
@@ -364,6 +378,20 @@ function workingGenius() {
         ["Everyone"]
       ),
       new Person(
+        "Nicola",
+        "Divine",
+        "https://cdn.churchsuite.com/Nr6TJr3e/user_files/kdchzfwu.jpg",
+        [
+          "Enablement",
+          "Tenacity",
+          "Discernment",
+          "Wonder",
+          "Galvanising",
+          "Invention",
+        ],
+        ["Everyone"]
+      ),
+      new Person(
         "Sarah",
         "Hepworth",
         "https://media.licdn.com/dms/image/C4E03AQGvwMtK5DDwQg/profile-displayphoto-shrink_400_400/0/1649356698941?e=1703116800&v=beta&t=4izvFQQFtf6EgGj-ztTv4M7eP2WP4fWP8z10WEpB23M",
@@ -380,7 +408,7 @@ function workingGenius() {
       new Person(
         "Serena",
         "Powell",
-        "https://img.freepik.com/premium-vector/stay-positive-emoji-hand-drawn-design-element-smiley-face-doodle-yellow-symbol-smiling-emoticon-scribble-happy-face-sticker_642540-791.jpg?w=1380",
+        "https://cdn.churchsuite.com/Nr6TJr3e/user_files/atch8wkq.jpg",
         [
           "Enablement",
           "Tenacity",
