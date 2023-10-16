@@ -380,7 +380,7 @@ function workingGenius() {
       new Person(
         "Nicola",
         "Divine",
-        "https://cdn.churchsuite.com/Nr6TJr3e/user_files/kdchzfwu.jpg",
+        "https://cdn.churchsuite.com/Nr6TJr3e/user_files/2xaldq7j.jpg",
         [
           "Enablement",
           "Tenacity",
