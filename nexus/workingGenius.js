@@ -67,7 +67,7 @@ function workingGenius() {
           "Invention",
           "Galvanising",
         ],
-        ["Everyone"]
+        ["Everyone", "Bunches"]
       ),
       new Person(
         "Ashley",
