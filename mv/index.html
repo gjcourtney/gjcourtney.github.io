@@ -10,7 +10,7 @@
 	<body class="px-4 space-y-4 pb-24 pt-16">
 		<div
 			class="fixed w-full top-0 inset-x-0 h-12 bg-gray-50 z-10 flex justify-center"
-			x-data="{options: [], current: null}"
+			x-data="{options: []}"
 			x-init="document.querySelectorAll('h1, h2').forEach(
 				el => {
 					options.push({
@@ -22,9 +22,9 @@
 				}
 			)"
 		>
-			<select class="w-80 text-base rounded-lg border-gray-300">
+			<select class="w-80 text-base rounded-lg border-gray-300" @change="window.scrollTo(0, $event.target.selectedOptions[0].getAttribute('top'))">
 				<template x-for="opt in options">
-					<option x-text="opt.name" @click="window.scrollTo(0, opt.top - 48)" :disabled="opt.disabled"></option>
+					<option x-text="opt.name" :disabled="opt.disabled" :top="(opt.top - 48)"></option>
 				</template>
 			</select>
 		</div>
