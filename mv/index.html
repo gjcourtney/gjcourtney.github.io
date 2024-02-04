@@ -1,0 +1,196 @@
+<html>
+	<head>
+		<title>Working Genius</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="https://unpkg.com/tailwindcss-jit-cdn"></script>
+		<script src="https://unpkg.com/alpinejs@3.10.3" defer></script>
+	</head>
+
+	<body class="px-4 space-y-4 pb-24 pt-16">
+		<div
+			class="fixed w-full top-0 inset-x-0 h-12 bg-gray-50 z-10 flex justify-center"
+			x-data="{options: [], current: null}"
+			x-init="document.querySelectorAll('h1, h2').forEach(
+				el => {
+					options.push({
+						disabled: el.tagName == 'H1',
+						el: el,
+						name: (el.tagName == 'H2' ? '&nbsp;&nbsp;&rarr;&nbsp;&nbsp;' : '')+el.innerText,
+						top: el.offsetTop
+					})
+				}
+			)"
+		>
+			<select class="w-80 text-base rounded-lg border-gray-300">
+				<template x-for="opt in options">
+					<option x-text="opt.name" @click="window.scrollTo(0, opt.top - 48)" :disabled="opt.disabled"></option>
+				</template>
+			</select>
+		</div>
+
+		<div class="relative flex justify-center py-4">
+			<div class="border-t-dashed border-t-2 absolute top-1/2 w-full"></div>
+			<h1 class="text-center text-3xl relative flex z-1 bg-white px-8 font-bold text-blue-800 font-serif">Geniuses</h1>
+		</div>
+
+		<div class="divide-y divide-dashed">
+			<div class="space-y-4 py-4">
+				<h2 class="text-2xl font-semibold text-blue-800">Wonder</h2>
+				<div class="italic ml-2 pl-3 border-blue-800 border-l-2 text-gray-600">The natural gift of pondering the possibility of greater potential and opportunity in a given situation.</div>
+				<ul class="list-inside list-disc pl-2">
+					<li>Are we fulfilling our potential, could we be better?</li>
+					<li>Naturally sits, ponders and speculates.</li>
+				</ul>
+			</div>
+			<div class="space-y-4 py-4">
+				<h2 class="text-2xl font-semibold text-blue-800">Invention</h2>
+				<div class="italic ml-2 pl-3 border-blue-800 border-l-2 text-gray-600">The natural gift of creating original and novel ideas and solutions.</div>
+				<ul class="list-inside list-disc pl-2">
+					<li>Loves a blank slate and a new problem to solve.</li>
+					<li>Naturally creates new concepts, even when it’s not necessary!</li>
+				</ul>
+			</div>
+			<div class="space-y-4 py-4">
+				<h2 class="text-2xl font-semibold text-blue-800">Discernment</h2>
+				<div class="italic ml-2 pl-3 border-blue-800 border-l-2 text-gray-600">The natural gift of intuitively and instinctively evaluating ideas and situations.</div>
+				<ul class="list-inside list-disc pl-2">
+					<li>Easily spots patterns and knows how to evaluate and discern things.</li>
+					<li>Sees what’s invented and knows if it will work.</li>
+					<li>Relies on gut more than data.</li>
+				</ul>
+			</div>
+			<div class="space-y-4 py-4">
+				<h2 class="text-2xl font-semibold text-blue-800">Galvanising</h2>
+				<div class="italic ml-2 pl-3 border-blue-800 border-l-2 text-gray-600">The natural gift of rallying, inspiring and organising others to take action.</div>
+				<ul class="list-inside list-disc pl-2">
+					<li>Pushes people forward to do something new.</li>
+					<li>Can organise in order to get things going.</li>
+					<li>Carries energy and enthusiasm.</li>
+				</ul>
+			</div>
+			<div class="space-y-4 py-4">
+				<h2 class="text-2xl font-semibold text-blue-800">Enablement</h2>
+				<div class="italic ml-2 pl-3 border-blue-800 border-l-2 text-gray-600">The natural gift of providing encouragement and assistance for an idea or project.</div>
+				<ul class="list-inside list-disc pl-2">
+					<li>You need help and I’ll help you get this done…</li>
+					<li>Don’t want a generic task, looks for specifics.</li>
+					<li>Needed to make the ideas happen.</li>
+				</ul>
+			</div>
+			<div class="space-y-4 py-4">
+				<h2 class="text-2xl font-semibold text-blue-800">Tenacity</h2>
+				<div class="italic ml-2 pl-3 border-blue-800 border-l-2 text-gray-600">The natural gift of pushing projects or tasks to completion to achieve results.</div>
+				<ul class="list-inside list-disc pl-2">
+					<li>Joy from finishing and <span class="line-through">crossing things off the list.</span></li>
+					<li>Love to see the impact and results of finishing.</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="relative flex justify-center py-4">
+			<div class="border-t-dashed border-t-2 absolute top-1/2 w-full"></div>
+			<h1 class="text-center text-3xl relative flex z-1 bg-white px-8 font-bold text-green-800 font-serif">Scenarios</h1>
+		</div>
+
+		<div class="divide-y divide-dashed">
+			<div class="space-y-4 py-4">
+				<h2 class="text-2xl font-semibold text-green-800">Refreshments team</h2>
+				<p class="ml-2 pl-3 border-green-800 border-l-2 text-gray-600 leading-relaxed">You have a member on your refreshments team who you know you can fully depend on. Each week they serve, they turn up on time and immediately get on with the work. At times, it can feel like they might be a little too task-focussed, but each time you ask them to do something for you, they respond enthusiastically. Due to their willing nature, you've asked them for any feedback or ideas they have to improve things, but have felt a little disappointed when none has been forthcoming. You asked them to organise a summer social for the whole team, but felt like a lot of the planning and decision-making fell to you, which you were hoping to avoid.<br><span class="text-black font-semibold">What could their Working Genius profile be?</span></p>
+			</div>
+			<div class="space-y-4 py-4">
+				<h2 class="text-2xl font-semibold text-green-800">Course leader</h2>
+				<p class="ml-2 pl-3 border-green-800 border-l-2 text-gray-600 leading-relaxed">You've been asked to pioneer a new discipleship course, with a lot of flexibility around what to do. Planning meetings have been a lot of fun and you really appreciated the ideas others have brought to the table. You instinctively knew that some of the ideas wouldn't work for the target demographic, but when pushed you didn't immediately have specific reasons as to why - you just knew. As the first event drew closer, you felt increasingly drained by the practicalities and detail, but appreciated other team members who helped pull it off. At the end of the first evening, you were pleased and relieved, but found yourself wondering if it had actually met the need you were hoping; you left with frustrated satisfaction.<br><span class="text-black font-semibold">What could your Working Genius profile be?</span></p>
+			</div>
+			<div class="space-y-4 py-4">
+				<h2 class="text-2xl font-semibold text-green-800">Small Group leading</h2>
+				<p class="ml-2 pl-3 border-green-800 border-l-2 text-gray-600 leading-relaxed">You lead a Small Group with another person and feel like between you you've got a lot of creativity. When planning for the term, it feels like you play off each other well - you may not always have specific ideas, but seem to be able to spark those from your co-leader. In more recent months, you've noticed that most of the mid-week pastoral care seems to fall to you, and you're always doing jobs for and running around supporting others in the group. Meanwhile, your co-leader tends to carry a lot of responsibility for running the group on the night, frequently being the one with the idea for the study, how ministry time will run, as well as leading worship! Others in the group have offered to help out, but for both of you, it can sometimes be hard to work out what others can do and easier to do it yourself rather than give it away.<br><span class="text-black font-semibold">What could be the Working Genius profiles of you and your co-leader?</span></p>
+			</div>
+		</div>
+
+		<div class="relative flex justify-center py-4">
+			<div class="border-t-dashed border-t-2 absolute top-1/2 w-full"></div>
+			<h1 class="text-center text-3xl relative flex z-1 bg-white px-8 font-bold text-red-800 font-serif">Combinations</h1>
+		</div>
+
+		<div class="divide-y divide-dashed">
+			<div class="space-y-4 py-4">
+				<h2 class="text-2xl font-semibold text-red-800">WI - Creative Dreamer</h2>
+				<p class="ml-2 pl-3 border-red-800 border-l-2 text-gray-600 leading-relaxed">Have a journal of ideas they have that they've never implemented. Walk around with a fount full of ideas in their head. Regardless of what they do they come up with creative ideas wherever they go. The come up with ideas, sometimes they're practical and sometimes they're not. They don't necessarily refine their ideas in order to make them practical. This person isn't typically suited to the main and plain, to routine jobs - they're looking for more than simply a process to follow.</p>
+			</div>
+			<div class="space-y-4 py-4">
+				<h2 class="text-2xl font-semibold text-red-800">WD - Contemplative Counsellor</h2>
+				<p class="ml-2 pl-3 border-red-800 border-l-2 text-gray-600 leading-relaxed">Both someone who is "in their head" pondering and coming up with ideas, but also able to hear other people's ideas and helps them to discern them. Someone who might say "have you thought about this?" or "have you tried out...?". They can be a little hesitant and nuanced - they want to make sure that they've really thought something through so that it's just right.</p>
+			</div>
+			<div class="space-y-4 py-4">
+				<h2 class="text-2xl font-semibold text-red-800">WG - Philosophical Motivator</h2>
+				<p class="ml-2 pl-3 border-red-800 border-l-2 text-gray-600 leading-relaxed">Least frequent type found. Can explore a lot of different possibilities and gain a lot of excitement from different things in their life. They enjoy thinking big picture thoughts and they get energy from exploring those with others and then galvanising others around those ideas. Can be a little confusing as they simultaneously saying "let's do it", but also "...but perhaps not". It can seem like they can communicate conflicting messages about the same thing - "let's get out there and take on that competitor" / "ooh, but they're very powerful and have great marketing, so maybe we shouldn't". Very thoughtful and really likely to encourage action.</p>
+			</div>
+			<div class="space-y-4 py-4">
+				<h2 class="text-2xl font-semibold text-red-800">WE - Idealistic Supporter</h2>
+				<p class="ml-2 pl-3 border-red-800 border-l-2 text-gray-600 leading-relaxed">They think about things and if there's a cause they believe in, they'll do everything they can to support people involved in that cause. These people walk around and ask questions about what's possible based on their environment and then immediately respond to that. They can be easily overrun as they're responsive to their environment and then also responsive to the people around them. They might find themselves taking on too much as a result of this combo.</p>
+			</div>
+			<div class="space-y-4 py-4">
+				<h2 class="text-2xl font-semibold text-red-800">WT - Careful Implementor</h2>
+				<p class="ml-2 pl-3 border-red-800 border-l-2 text-gray-600 leading-relaxed">They like to get stuff done, but they're also pretty careful and pretty cautious. Really deep thinker, but also deeply motivated. Living at both 50,000 feet and also 5 feet from the ground can leave them feeling pretty conflicted and torn; pulled between the clouds and the pavement. Bursts of energy (T) to get things done and then periods as they take a step back to assess where they're at and what they've done (W). Decision making and progress can lead to some angst and anxiety as they're nuanced about the direction. Can find themselves heading back to Wonder towards the end of a piece of work when Tenacity is required; this is a real challenge for them.</p>
+			</div>
+			<div class="space-y-4 py-4">
+				<h2 class="text-2xl font-semibold text-red-800">ID - Discriminating Ideator</h2>
+				<p class="ml-2 pl-3 border-red-800 border-l-2 text-gray-600 leading-relaxed">Lots of new ideas, but really love vetting them internally - "I have an idea, is it going to work?". However, no inventor can truly vet their own ideas - a second person is required for feedback and to help discern those ideas. The rough draft is generally pretty good from these people - it's 80% of the way, but they still need to invite other people into the process to help them discern the ideas effectively. Not a lot of really bad drafts get through their internal filter, but they really struggle to fully refine their ideas and need to lean on others to help here. They can be very insitent in their ideas (since they've both invented and discerned them), so need strong characters around them as they can be difficult to disagree with.</p>
+			</div>
+			<div class="space-y-4 py-4">
+				<h2 class="text-2xl font-semibold text-red-800">IG - Evangelising Innovator</h2>
+				<p class="ml-2 pl-3 border-red-800 border-l-2 text-gray-600 leading-relaxed">They're an innovator, but they have a strong "sales" side to them - they're excited about their ideas and that excitement is genuine! They love to get others excited about their ideas, they're born salespeople and motivators who evangelise their own ideas. If they've got an idea, you're going to hear about it - they don't write their ideas down in a journal, they tell others about them to see what sticks. They immediately start getting energy around their ideas, often ideas that they simply came up with that morning! Sometimes they can be hasty and too quick to move. They can also seem over the top and inauthentic - they can seem over eager to sell an idea.</p>
+			</div>
+			<div class="space-y-4 py-4">
+				<h2 class="text-2xl font-semibold text-red-800">IE - Adaptable Designer</h2>
+				<p class="ml-2 pl-3 border-red-800 border-l-2 text-gray-600 leading-relaxed">Come up with new ideas, but if there's an objection they're quick to say "you don't like that? I'll tweak that for you, no problem". Great at both new ideas and also customer service. Lots of new ideas, but not necessarily wedded to them, simply wants to serve their customers. Sometimes they can be too defferential and struggle to push their own idea when they sense it's the best one, leaning more into their E and choosing to make the customer happy. May not be the most proactive person since they're reactive to others.</p>
+			</div>
+			<div class="space-y-4 py-4">
+				<h2 class="text-2xl font-semibold text-red-800">IT - Methodical Architect</h2>
+				<p class="ml-2 pl-3 border-red-800 border-l-2 text-gray-600 leading-relaxed">Very analytical and hard working. Someone with great and practical ideas that they're able to implement. Sometimes they can be overly analytical - "I designed this, so this is the way it's going to work", they can be overly wedded to the way they first envisaged something would be done. Nuance and flexibility are probably not their strength! Someone who has a lot of ideas... that they've already finished. Can find themselves having gotten to the end of the process before realising that they should really have refined the idea before they started working on it. Trial and error is how they explore the workability of things - they move straight from ideation to implementation, sometimes changing the implementation multiple times before they find the right fit (because they skipped the activation process). Less likely to ask for discernment because they're focussed on moving forward and getting to the end.</p>
+			</div>
+			<div class="space-y-4 py-4">
+				<h2 class="text-2xl font-semibold text-red-800">DG - Intuitive Activator</h2>
+				<p class="ml-2 pl-3 border-red-800 border-l-2 text-gray-600 leading-relaxed">Good sense of what's a good idea very early in the process. They give confidence to others because they know that their judgement can be well trusted. Others know that if this person it trying to rally people around an idea, it's going to be a good one. As soon as they hear an idea that they're convinced is a good one, they immediately move towards galvanising people around that idea and getting them on board. They can be overly confident that they've got something right; "rarely wrong, but never in doubt". They can move too quickly, moving swiftly from D to G, which can be too fast for some others.</p>
+			</div>
+			<div class="space-y-4 py-4">
+				<h2 class="text-2xl font-semibold text-red-800">DE - Insightful Collaborator</h2>
+				<p class="ml-2 pl-3 border-red-800 border-l-2 text-gray-600 leading-relaxed">Come alongside others saying "I really want to help you, but before I do I'm going to ask some questions to make sure that it's actually what you need". These people get asked to help a lot because they're quick to say "yes", but also because they can make sure that a process is well-formed before it begins. Sometimes they might find it hard to push back when they don't think something is a great idea, but they're afraid to tell you right away. They can find themselves taking on too much, having started with simply discerning an idea, they can quickly take on the burden of getting an idea into implementation. They need clear boundaries and guidance around whether they are being asked to Discern, Enable or both.</p>
+			</div>
+			<div class="space-y-4 py-4">
+				<h2 class="text-2xl font-semibold text-red-800">DT - Judicious Accomplisher</h2>
+				<p class="ml-2 pl-3 border-red-800 border-l-2 text-gray-600 leading-relaxed">It's not just about getting stuff done, it about getting the right stuff done. These are very productive people; once they've decided that something is a good decision, they're all in and will crank through the work. They have one foot in activation and the other in implementation. Tenacity can carry a lot of weight in a person, so it's important for this person to make sure that they're choosing to discern first before they allow their tenacity to kick in. There's an angst in this person because they're both judging something but at the same time they really want to get it done. When someone's lazy, they can get pretty frustated at that person. They're really frustrated by inefficiency and things that are not done well.</p>
+			</div>
+			<div class="space-y-4 py-4">
+				<h2 class="text-2xl font-semibold text-red-800">GE - Enthusiastic Encourager</h2>
+				<p class="ml-2 pl-3 border-red-800 border-l-2 text-gray-600 leading-relaxed">Positive, enthusiastic, affirming and life-giving people. The people thrive in roles like a fundraiser and relationship management - they bring real energy to helping others. They are ralliers, whipping up support and bringing people to action. They can, however, affirm too much, avoiding difficult feedback. They need to make sure that their encouragement is well-directed.</p>
+			</div>
+			<div class="space-y-4 py-4">
+				<h2 class="text-2xl font-semibold text-red-800">GT - Assertive Driver</h2>
+				<p class="ml-2 pl-3 border-red-800 border-l-2 text-gray-600 leading-relaxed">"The butt kicker" - they love to get people on board and get it done right away. They get joy and energy by getting others on board with an idea, but then joining them in doing the hard work in order to get the thing done. They're a double disruptive type, but can feel very impatient and fast at times. They would be very frustrated in an environment where you have to be very defferential and do things "the right way". When they see someone who's not getting their work done, they're going to tell them. They can find themselves regularly bulldozing others, which can be helpful at times, but equally unhelpful too.</p>
+			</div>
+			<div class="space-y-4 py-4">
+				<h2 class="text-2xl font-semibold text-red-800">ET - Loyal Finisher</h2>
+				<p class="ml-2 pl-3 border-red-800 border-l-2 text-gray-600 leading-relaxed">Immensely employable people - reliable, responsive to the needs, don't have to be managed hard in order to keep going. Incredibly valuable people, but they easily over-volunteer. They can get taken advantage of because they're responsive to the needs of others and then once they've responded, they're determined to see the task through to the end. The things they want to do can be overwhelming at times. They can over-stretch themselves and might well quit or get really sick before they tell you they have too much on their plate. They have extreme loyalty to the person who asked them to help with a task and then also to the process of seeing the task through to completion. It's easy not to give them the praise that they deserve, thinking "that's just who they are". People of this type can easily find themselves burning out as they're fully within the implementation phase - they need to be self aware to prevent this.</p>
+			</div>
+		</div>
+
+
+		<div class="relative flex justify-center py-4">
+			<div class="border-t-dashed border-t-2 absolute top-1/2 w-full"></div>
+			<h1 class="text-center text-3xl relative flex z-1 bg-white px-8 font-bold text-orange-800 font-serif">Resources</h1>
+		</div>
+
+		<div class="divide-y divide-dashed">
+			<div class="space-y-4 py-4">
+				<h2 class="text-2xl font-semibold text-orange-800">Podcast</h2>
+				<p class="ml-2 pl-3 border-orange-800 border-l-2 text-gray-600 leading-relaxed">Available on a range of platforms, each episode is about 15-20 minutes, where Patrick Lencioni and his team talk about a different learning from the Working Genius model: <a href="https://podcasts.apple.com/gb/podcast/the-working-genius-podcast-with-patrick-lencioni/id1553105854">Apple Podcasts</a>.</p>
+			</div>
+			<div class="space-y-4 py-4">
+				<h2 class="text-2xl font-semibold text-orange-800">Book</h2>
+				<p class="ml-2 pl-3 border-orange-800 border-l-2 text-gray-600 leading-relaxed">Written in the form of a short story with various characters, the Working Genius book is an easy read that makes the model very accessible: <a href="https://www.amazon.co.uk/Types-Working-Genius-Understand-Frustrations/dp/1637743297">Buy on Amazon</a>.</p>
+			</div>
+		</div>
+	</body>
+</html>
