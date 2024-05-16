@@ -40,7 +40,7 @@ function workingGenius() {
           "Wonder",
           "Tenacity",
         ],
-        ["Leadership team", "Board", "Teaching"]
+        ["Leadership team", "Board", "Service teams", "Teaching"]
       ),
       new Person(
         "Adam",
