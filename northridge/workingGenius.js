@@ -12,7 +12,7 @@ function workingGenius() {
       "Enablement",
       "Tenacity",
     ],
-    teams: ["Leadership team", "Board", "Teaching", "Worship", "Kids/Youth"],
+    teams: ["Everyone", "Leadership team", "Board", "Teaching", "Worship", "Kids/Youth"],
     people: [
       new Person(
         "Rob",
@@ -26,7 +26,7 @@ function workingGenius() {
           "Tenacity",
           "Invention",
         ],
-        ["Leadership team", "Board", "Service teams", "Teaching", "Worship"]
+        ["Everyone", "Leadership team", "Board", "Service teams", "Teaching", "Worship"]
       ),
       new Person(
         "Bonnie",
@@ -40,7 +40,7 @@ function workingGenius() {
           "Wonder",
           "Tenacity",
         ],
-        ["Leadership team", "Board", "Service teams", "Teaching"]
+        ["Everyone", "Leadership team", "Board", "Service teams", "Teaching"]
       ),
       new Person(
         "Adam",
@@ -54,7 +54,7 @@ function workingGenius() {
           "Invention",
           "Enablement",
         ],
-        ["Leadership team", "Worship", "Teaching", "Service teams"]
+        ["Everyone", "Leadership team", "Worship", "Teaching", "Service teams"]
       ),
       new Person(
         "Kate",
@@ -68,7 +68,7 @@ function workingGenius() {
           "Wonder",
           "Galvanising",
         ],
-        ["Service teams", "Kids/Youth"]
+        ["Everyone", "Service teams", "Kids/Youth"]
       ),
       new Person(
         "Anna",
@@ -82,7 +82,7 @@ function workingGenius() {
           "Discernment",
           "Tenacity",
         ],
-        ["Leadership team", "Teaching", "Service teams"]
+        ["Everyone", "Leadership team", "Teaching", "Service teams"]
       ),
       new Person(
         "Ben",
@@ -96,7 +96,7 @@ function workingGenius() {
           "Wonder",
           "Tenacity",
         ],
-        ["Teaching", "Service teams"]
+        ["Everyone", "Teaching", "Service teams"]
       ),
       new Person(
         "Andy",
@@ -110,7 +110,7 @@ function workingGenius() {
           "Invention",
           "Tenacity",
         ],
-        ["Kids/Youth"]
+        ["Everyone", "Kids/Youth"]
       ),
     ],
     view: "people",
