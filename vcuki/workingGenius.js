@@ -12,7 +12,7 @@ function workingGenius() {
       "Enablement",
       "Tenacity",
     ],
-    teams: ["Everyone", "Coaching", "Comms", "DTI", "Events", "Leadership Admin", "Multiply", "Training", "VLT"],
+    teams: ["Everyone", "Coaching", "Comms", "DTI", "Events", "Finance and Legal", "Leadership Admin", "Multiply", "Training", "VLT"],
     people: [
       new Person(
         "Adam",
