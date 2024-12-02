@@ -37,8 +37,8 @@ function workingGenius() {
           "Discernment",
           "Wonder",
           "Enablement",
-          "Galvanising",
           "Tenacity",
+          "Galvanising",
         ],
         ["Everyone", "Training"]
       ),
